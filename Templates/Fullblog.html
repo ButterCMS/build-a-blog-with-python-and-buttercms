@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <title>{{blogpage.title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='fullStyle.css') }}" />
+  </head>
+ 
+  <body id="body">
+    <nav id="nav">
+        <div id="top">
+          <div id="logo">
+          </div>
+          <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li class="active"><a href="#">Blogs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div id="middle">
+
+          </div>
+          <div id="button">
+            <span>Get Started</span>
+          </div>
+          
+        </div>
+    </nav>
+    <div id="ArticleContainer">
+      <div id="banner">
+        <div id="Art_title">
+          {{blogpage.title}}
+        </div>
+        <div id="Art_author">
+            <span>By {{blogpage.author.first_name}} {{blogpage.author.last_name}}</span>
+        </div>
+        <img src="{{blogpage.author.profile_image}}" id="profile_image" /> 
+      </div>
+      <div id="Article">
+        {{ blogpage.body | safe}}
+      </div>
+    </div>
+    
+    
+  </body>
+</html>
