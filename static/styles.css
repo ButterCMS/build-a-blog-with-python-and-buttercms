@@ -1,0 +1,261 @@
+     
+#menu{
+  float: left;
+   width: 60%;
+   height: 100%;
+   margin: none;
+}    
+#menu ul{
+   text-align: center;
+   margin-top: 50px;
+   margin: none;
+   margin-left: -15px;
+}    
+
+#menu li{
+   display: inline-block;
+   padding: none;
+   margin: none;
+}
+    
+#menu li a, #menu li span{
+   display: inline-block;
+   padding: 0em 1.5em;
+   text-decoration: none;
+   font-weight: 500;
+   text-transform: uppercase;
+   line-height: 40px;
+}
+    
+#menu li a{
+        
+   color: #FFF;
+}
+
+
+#menu li:hover a, #menu li span{
+   background: #121A3E;
+   color: #FFF;
+   border-bottom: 1px solid #d9d900;
+   text-decoration: none;
+   background-color: #121A3E;
+
+}
+
+#menu2{
+  float: left;
+  width: 60%;
+   height: 100%;
+   margin: none;
+  
+}    
+#menu2 ul{
+   text-align: center;
+   margin-top: 50px;
+   margin: none;
+   margin-left: -85px;
+}    
+#menu2 li{
+   display: inline-block;
+   padding: none;
+   margin: none;
+}
+    
+#menu2 li a, #menu li span{
+   display: inline-block;
+   padding: 0em 1.5em;
+   text-decoration: none;
+   font-weight: 500;
+   text-transform: uppercase;
+   line-height: 40px;
+}
+    
+#menu2 li a{
+        
+   color:#121A3E
+}
+    
+#menu2 li:hover a, #menu li span{
+   background: #121A3E;
+   color: #FFF;
+   border-bottom: 1px solid #d9d900;
+   text-decoration: none;
+   background-color: #121A3E;
+
+}
+
+#container {
+   margin-left: 15px;
+   width: fit-content;
+   margin-right: 15px;
+  
+ }
+ #title{
+   padding: 5;
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 20px;
+   color:#121A3E;
+   font-weight: bolder;
+   float: left;
+   width: 100%;
+ }
+
+ #published{
+   font-size: small;
+   word-spacing: 0%;
+   color: white;
+   float:left;
+   width: 80%;
+   align-items: center;
+   
+ }
+
+ #summary{
+   padding-left: 5;
+   font-size:small;
+   color:#121A3E;
+ }
+ #image{
+   width:100%;
+   height: 100%
+   
+ }
+ #profile_image{
+   width: 40px;
+   height: 40px;
+   border-radius: 50%;
+   float: right;
+   margin: 5px;
+  
+ }
+ #top{
+   color: rgb(236, 241, 242);
+   background-color: #121A3E;
+   height: 130px;
+   margin: 0;
+   position: relative;
+   text-align: center;
+  
+ }
+ #nav{
+   width: 100%;
+   text-align: center;
+   height: 130px;
+   background-color: #FED700;
+ }
+ .active{
+   background: #121A3E;
+   color: #FFF;
+   border-bottom: 1px solid #FED700;
+   text-decoration: none;
+   background-color: #121A3E;
+
+ }
+ a {
+all: unset;
+ }
+ #card{
+    color: #FFF;
+   width: 100%;
+   height:100%;
+  
+ 
+ }
+ #body{
+   background-color:white;
+   padding: 0%;
+   margin: 0%;
+ }
+ #slicer{
+   display: flex;
+   flex-direction: row;
+   margin-top: 10%;
+ }
+#button {
+ background-color: #FED700;
+ color: #121A3E;
+ padding: 15px 32px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 16px;
+ margin-top: 45px;
+ cursor: pointer;
+ border-radius: 15px;
+}
+#button:hover{
+ background-color: #121a3e;
+ color: #FED700;
+ border: 2px solid #FED700;
+ border-radius: 15px;
+}
+#SearchHero{
+
+ height: fit-content;
+ min-height: 300px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ font-size: 60px;
+ font-weight: bolder;
+ color:#121A3E;
+ padding: 10px;
+ -ms-flex-align: center;
+}
+#ListContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 25px;
+  
+}
+#mainPaper{
+
+ height: 400px;
+ display:flex;
+ flex-direction: column;
+ width: 35%;
+ margin: 5px;
+ text-align: center;
+ align-items: center;
+}
+#mainImage{
+ background-color: rgb(27, 156, 156);
+ width: 80%;
+ height: 200px;
+ float: left;
+ 
+
+}
+#mainSide{
+ background-color:rgb(252, 252, 252);
+ float: left;
+ width: 80%;
+ height: 35%;
+ color:#121A3E;
+ font-weight: bolder;
+}
+#Profile{
+ display: flex;
+ flex-direction:row;
+ text-align: center;
+ width: 100%;
+ margin: 5px;
+
+}
+#dpcontainer{
+ width: 20%;
+
+}
+#Published_text{
+ float: right;
+ margin-top: 10px;
+ font-weight:normal;
+ font-family:Verdana, Geneva, Tahoma, sans-serif;
+ color: #121A3E;
+ font-size: small;
+}
+#bannerText{
+
+  margin-top: 90px;
+}

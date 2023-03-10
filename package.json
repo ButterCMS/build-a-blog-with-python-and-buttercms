@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "buttercms": "^1.2.9",
+    "flask": "^0.2.10"
+  }
+}

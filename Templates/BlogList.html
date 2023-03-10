@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>{{homepage.title}}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+ 
+  <body id="body">
+    <nav id="nav">
+        <div id="top">
+          <div id="logo">
+           
+          </div>
+          <div id="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Products</a></li>
+                <li class="active"><a href="#">Blogs</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div id="middle">
+
+          </div>
+          <div id="button">
+            <span>Get Started</span>
+          </div>
+          
+        </div>
+    </nav>
+    <div id="SearchHero">
+        <span id="bannerText">Take A Deep Dive Through Our Blogs</span>
+    </div>
+    <div id="ListContainer">
+    {% for t in homepage %}
+    <div id="mainPaper">
+        <div id="mainImage">
+          <a href="/viewblog?slug={{t.slug}}">
+            
+              <img src="{{t. featured_image}}" id="image" />
+        
+          </a>
+        </div>
+        <div id="mainSide">
+          <a href="/viewblog?slug={{t.slug}}">
+            <div id="card">
+              <h1 id="title">{{ t.title }}</h1>
+              <div>
+              <span id="summary">{{t.summary}}</span>
+              </div>
+              <div id="profile">
+                <div id="published">
+                  <h3 id="published_text">By {{t.author.first_name}}  {{t.author.last_name}}</h3>
+                </div>
+                <div id="dp_container">
+                  <img src="{{t.author.profile_image}}" id="profile_image" />  
+                </div>
+                
+              </div>
+             
+            </div>
+          </a>
+        </div>
+    </div>
+    {% endfor %}
+    </div>
+    
+  </body>
+</html>
